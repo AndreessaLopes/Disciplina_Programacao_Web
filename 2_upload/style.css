@@ -1,0 +1,68 @@
+/* Ajuste do container para ficar acima da imagem de fundo */
+.container {
+  position: relative; /* Torna o z-index funcional */
+  z-index: 1; /* Valor positivo para estar acima da bg-image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 24px;
+  padding-top: 10%;
+  color: #ff3198;
+  text-align: center;
+}
+
+.formCadastro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: bold;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border: 3px solid;
+  border-radius: 20px;
+  color: #ca0a6a;
+  border-color: #ff0080;
+  background-color: rgba(248, 208, 240, 0.586);
+}
+
+#previsaoImagem {
+  max-width: 100%;
+  display: block;
+  margin: 10px auto;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="date"] {
+  border: 1px solid;
+  height: 40px;
+  border-radius: 4px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 13px;
+  width: 94.5%;
+  color: black;
+}
+
+/* Configuração da imagem de fundo */
+.bg-image {
+  background-image: url("https://www.creativefabrica.com/wp-content/uploads/2023/06/22/Hello-Kitty-Kawaii-Chibi-Cartoon-Graphic-72740593-1.png");
+  filter: blur(3px);
+  -webkit-filter: blur(6px);
+  position: fixed; /* Mantém a imagem fixa no fundo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1; /* Camada negativa para ficar atrás do conteúdo */
+}
